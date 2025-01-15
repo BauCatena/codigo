@@ -1,0 +1,45 @@
+$light-gold: #f6e5b3;
+$gold:  #c4a767;
+$gray:  #151515;
+$light-gray: #a4a4a4;
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin center{
+    align-items: center;
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: $gray;
+}
+p{
+    color: $light-gray;
+}
+.icon{
+    width: 8rem;
+    border-radius: 100%;
+}
+.heading{
+    font-size: 2.5rem;
+}

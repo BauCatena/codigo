@@ -1,0 +1,11 @@
+@use "../variables.scss";
+.header{
+    @include variables.flex-row;
+    justify-content: space-between;
+    padding:1rem;
+    border-bottom: 1px solid variables.$light-gray;
+    .logo-container{
+        @include variables.flex-row;
+        @include variables.center
+    }
+}
