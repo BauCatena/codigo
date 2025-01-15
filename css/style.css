@@ -29,7 +29,9 @@ p {
 }
 
 .heading {
+  text-align: center;
   font-size: 2.5rem;
+  color: #a4a4a4;
 }
 
 .header {
@@ -38,6 +40,7 @@ p {
   justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid #a4a4a4;
+  margin-bottom: 1rem;
 }
 .header .logo-container {
   display: flex;
@@ -49,6 +52,7 @@ p {
 .footer-top {
   border-top: 1px solid #a4a4a4;
   padding: 1rem;
+  margin-top: 1rem;
 }
 
 .footer-bottom {
@@ -56,6 +60,38 @@ p {
 }
 .footer-bottom .info {
   padding: 0.5rem;
+}
+
+.info-section {
+  padding: 1.5rem;
+  display: block;
+}
+.info-section .range-info {
+  text-align: justify;
+}
+
+.most-wanted {
+  color: #a4a4a4;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+}
+.top-container .top {
+  margin: 1rem;
+  width: 30%;
+  height: 20rem;
+  border: solid 1px #a4a4a4;
+}
+.top-container .two {
+  margin-top: 4rem;
+}
+.top-container .three {
+  margin-top: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

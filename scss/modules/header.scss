@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding:1rem;
     border-bottom: 1px solid variables.$light-gray;
+    margin-bottom: 1rem;
     .logo-container{
         @include variables.flex-row;
         @include variables.center

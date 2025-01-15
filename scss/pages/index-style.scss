@@ -1,0 +1,29 @@
+@use "../variables.scss";
+.info-section{
+    padding: 1.5rem;
+    display: block;
+    .range-info{
+        text-align: justify;
+    }  
+}
+.most-wanted{
+    color: variables.$light-gray;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+.top-container{
+    @include variables.flex-row;
+    .top{
+        margin: 1rem;
+        width: 30%;
+        height: 20rem;
+        border: solid 1px variables.$light-gray;
+    }
+    .two{
+        margin-top: 4rem;
+    }
+    .three{
+        margin-top: 8rem;
+    }
+}
