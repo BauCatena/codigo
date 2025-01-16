@@ -45,3 +45,11 @@ p{
     font-size: 2.5rem;
     color: $light-gray;
 }
+a{
+    text-decoration: none;
+    color: $light-gray;
+    transition: all 200ms ease;
+}
+a:hover{
+    color: $light-gold;
+}
