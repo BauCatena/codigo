@@ -34,6 +34,10 @@ p {
   color: #a4a4a4;
 }
 
+.margin1 {
+  margin: 1rem;
+}
+
 a {
   text-decoration: none;
   color: #a4a4a4;
@@ -158,12 +162,99 @@ a:hover {
   padding: 1rem;
   margin-top: 1rem;
 }
+.footer-top .group {
+  position: relative;
+  margin-top: 10px;
+}
+.footer-top .group .footer-input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #f6e5b3;
+  background: transparent;
+}
+.footer-top .group .footer-input:focus {
+  outline: none;
+}
+.footer-top .group .footer-input:focus ~ label, .footer-top .group .footer-input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #f6e5b3;
+}
+.footer-top .group .footer-input:focus ~ .bar-footer::before, .footer-top .group .footer-input:focus ~ .bar-footer::after {
+  width: 50%;
+}
+.footer-top .group .footer-input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+.footer-top .group label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.footer-top .group .bar-footer {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+.footer-top .group .bar-footer::before, .footer-top .group .bar-footer::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #c4a767;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.footer-top .group .bar-footer::before {
+  left: 50%;
+}
+.footer-top .group .bar-footer::after {
+  right: 50%;
+}
+.footer-top .group .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
 
 .footer-bottom {
   padding: 1rem;
 }
 .footer-bottom .info {
   padding: 0.5rem;
+}
+.footer-bottom .social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-bottom .social .social-icon {
+  width: 30px;
 }
 
 .info-section {
